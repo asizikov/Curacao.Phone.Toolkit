@@ -18,6 +18,7 @@ namespace Curacao.Phone.Toolkit.Services
             BeginInvoke(action);
         }
 
+        [PublicAPI]
         public void Initialize([NotNull] Dispatcher dispatcher)
         {
             if (dispatcher == null)
