@@ -39,9 +39,12 @@
     <Compile Include="Services\ISystemDispatcher.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="JetBrains.Annotations.PCL">
-      <HintPath>..\Lib\JetBrains.Annotations.PCL.dll</HintPath>
+    <Reference Include="JetBrains.Annotations">
+      <HintPath>..\packages\JetBrains.Annotations.Portable.8.0.5185.29681\lib\portable-win+net40+sl40+wp+Xbox40\JetBrains.Annotations.dll</HintPath>
     </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
