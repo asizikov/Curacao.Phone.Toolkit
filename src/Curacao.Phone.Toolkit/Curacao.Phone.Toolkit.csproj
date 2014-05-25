@@ -94,18 +94,16 @@
     <Compile Include="Tombstone\TombstoneHelper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Curacao.Mvvm.Abstractions, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Curacao.Mvvm.Abstractions.1.0.0\Curacao.Mvvm.Abstractions.dll</HintPath>
+    </Reference>
     <Reference Include="JetBrains.Annotations">
       <HintPath>..\packages\JetBrains.Annotations.Portable.8.0.5185.29681\lib\portable-win+net40+sl40+wp+Xbox40\JetBrains.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.1\lib\portable-net45+wp80+win8\Newtonsoft.Json.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Curacao.Mvvm.Abstractions\Curacao.Mvvm.Abstractions.csproj">
-      <Project>{89D0EEFB-D98E-4CB7-85ED-CA55F98A8B41}</Project>
-      <Name>Curacao.Mvvm.Abstractions</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

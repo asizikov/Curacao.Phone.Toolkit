@@ -1,11 +1,12 @@
 ﻿using System.IO.IsolatedStorage;
+using System.Runtime.InteropServices;
 using JetBrains.Annotations;
 using Newtonsoft.Json;
 
 namespace Curacao.Phone.Toolkit.Settings
 {
     [PublicAPI]
-    public abstract class BaseApplicationSettings<TSettings> where TSettings : new()
+    public abstract class BaseApplicationSettings<TSettings> where TSettings : class
     {
         private const string SettingsKey = "settings";
 
@@ -23,7 +24,6 @@ namespace Curacao.Phone.Toolkit.Settings
             var settingsJsonString = (string) IsolatedStorageSettings.ApplicationSettings[SettingsKey];
             var settings = DeserializeFromString(settingsJsonString);
 
-// ReSharper disable once CompareNonConstrainedGenericWithNull
             if (settings == null)
             {
                settings = GetDefaultSettings();
